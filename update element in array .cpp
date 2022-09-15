@@ -1,0 +1,29 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+void update(int arr[],int n){
+
+    cout<<endl<<"Inside the function"<<endl;
+
+    //updating array's first element
+    arr[0]=15;
+
+    //printing the array
+    for(int i=0;i<3;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+    cout<<"Going back to main function"<<endl;
+}
+int main(){
+    int arr[3]={2,7,9};
+    update(arr,3);
+
+    //printing the array
+    cout<<"printing in main function"<<endl; 
+    for(int i=0;i<3;i++){
+        cout<<arr[i];
+    }
+    cout<<endl;
+    return 0;
+}
